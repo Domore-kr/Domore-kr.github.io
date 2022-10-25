@@ -1,0 +1,541 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.ref {
+    text-decoration: none;
+    color:inherit
+}
+
+.ref:hover {
+    color: rgb(181, 159, 91);
+}
+
+.hat {
+    max-width: 100vw;
+    width: 100%;
+    height: 449px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    background-image: url("../images/banner-bg.jpg");
+    background-size: cover;
+}
+
+.blackout {
+    background-color: rgb(0, 0, 0);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: block;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.menu {
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    z-index: 1;
+}
+
+.menu-list {
+    display: flex;
+    list-style-type: none;
+    font-size: 0.78vw;
+    font-family: "Open Sans";
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+.menu-list-link a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.menu-list-link:nth-child(1n + 2) {
+    margin-left: 36px;
+}
+
+.menu-list-link:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width:10%;
+    z-index: 1;
+    position: relative;
+    padding-top: 29px;
+    left: 14.93%;
+}
+
+.intro {
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans";
+    font-size: 2.71vw;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+    top: 43.75%;
+    bottom: 32.5%;
+    right: 29.5%;
+    left: 29.5%;
+    margin:0;
+    padding:0;
+}
+
+
+
+
+.trends {
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 59px;
+    display: block;
+}
+
+.head {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+}
+
+.head-txt {
+    font-family: "Open Sans";
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+}
+
+.color-line {
+    background-color: rgb(255, 217, 189);
+    height: 3px;
+    width: 64px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+.trends-list {
+    display: flex;
+    margin-top: 64px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.trend {
+    box-sizing: border-box;
+    max-width: 25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.trend:nth-child(1n + 2) {
+    margin-left: 4px;
+}
+
+.image-trend {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+.trend-inform {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 4.96% 5.3%;
+    border: 3px solid rgb(139, 125, 84);
+    position: absolute;
+    z-index: 1;
+    padding-top: 14px;
+}   
+
+.tags {
+    color: rgb(181, 159, 91);
+    list-style-type: none;
+    display: flex;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 0.84vw;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-left: 10%;
+    margin-block-end: 0;
+}
+
+.tag-link {
+    margin-right: 20px;
+}
+
+.text-inform {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 1.2vw;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 11px;
+    margin-bottom: 33px;
+    display: block;
+}
+
+.center {
+    display: flex;
+    padding-top: 58px;
+    padding-left: 14%;
+    padding-right: 14%;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.posts {
+    width: 76.4%;
+    box-sizing: border-box;
+}
+
+.post {
+    display: flex;
+    padding-left: 22px;
+    position: relative;
+    width: 100%;
+}
+
+.post:nth-child(1n + 2) {
+    margin-top: 58px
+}
+
+.image-post {
+    width: 46.4%;
+}
+
+.post-inform {
+    padding-left: 3.4%;
+    box-sizing: border-box;
+}
+
+.center-tags {
+    padding-left: 0;
+}
+
+.post-head {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    position: relative;
+    height: 18%;
+    margin-top: 15px;
+}
+
+.date-author {
+    display: flex;
+}
+
+.date {
+    padding-right: 1.13%;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 0.72vw;
+    color: rgb(136, 136, 136);
+    white-space: nowrap;
+}
+
+.author {
+    margin: 0;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 0.72vw;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+}
+
+.post-text {
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 0.9vw;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.sidebar {
+    position: relative;
+    width: 24.89%;
+    height: 83.66%;
+    margin-left: 8.07%;
+}
+
+.new-posts {
+    width: 100%;
+    height: 502px;
+    position: relative;
+}
+
+.mini-head {
+    font-size: 0.84vw;
+}
+
+.fresh-posts {
+    position: relative;
+    text-align: center;
+    top: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fresh-post {
+    display: flex;
+    width: 100%;
+}
+
+.image-mini {
+    height: 81px;
+    width: 81px;
+    padding: 0 2px 7px 2px;
+    box-sizing: border-box;
+}
+
+.mini-inform {
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.mini-trend {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 0.84vw;
+    min-width: 100%;
+    margin-top: 0.6%;
+    text-transform: uppercase;
+    display: block;
+}
+
+.search-bar {
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 62px;
+}
+
+.search {
+    background-color: rgb(244, 247, 246);
+    width: 82%;
+    height: 48px;
+    border: 0;
+    padding: 19px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.search-button {
+    width: 18%;
+    cursor: pointer;
+    background-color: rgb(181, 159, 91);
+    border: none;
+    padding: none;
+    background-image: url("../svg/search.svg");
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center center;
+}
+
+.email-button {
+    margin-bottom: 61px;
+}
+
+.email {
+    width: 100%;
+    margin-top: 23px;
+    margin-bottom: 18px;
+}
+
+.button {
+    border: none;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 0.84vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(181, 159, 91);
+    cursor: pointer;
+    width: 100%;
+    height: 48px;
+    outline: none;
+}
+
+.side-tags {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+}
+
+.side-tag {
+    border: 3px solid rgb(238, 238, 238);
+    margin: 6px;
+    padding: 7px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 0.84vw;
+}
+
+.topics {
+    margin-top: 61px;
+}
+
+.topics-tags {
+    list-style-type: none;
+    flex-direction: column;
+}
+
+.topic-tag {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 0.84vw;
+    text-align: left;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    display: flex;
+}
+
+.topic-number {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 0.72vw;
+    color: rgb(181, 159, 91);
+    margin-left: 6px;
+    vertical-align: super;
+}
+
+.buy-panel {
+    margin-top: 63px;
+    width: 100%;
+    padding-left: 14%;
+    padding-right: 14%;
+    box-sizing: border-box;
+}
+
+.products {
+    display: flex;
+    margin-top: 29px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.product-image {
+    width: 86.706%;
+    height: 204px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.product {
+    width: 28.949%;
+}
+
+.product:nth-child(2) {
+    padding-left: 66px;
+    padding-right: 66px;
+}
+
+.buy-content {
+    height: 261px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid rgb(181, 159, 91);
+    position: relative;
+    bottom: 29px;
+    padding: 55px 23px 26px 21px;
+}
+
+.buy-post-head {
+    margin-bottom: 0;
+}
+
+.buy-post-text {
+    margin-top: 0;
+}
+
+.product-ref {
+    text-decoration: none;
+    color: rgb(181, 159, 91);
+}
+
+.price-button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.price {  
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 1.2vw;
+    display: block;
+}
+
+.crossed-price {
+    font-size: 0.84vw;
+    text-decoration: line-through;
+}
+
+.button-buy {
+    width: 40.76%;
+    position: relative;
+}
+
+.foot {
+    width: 100%;
+    padding-left: 14%;
+    padding-right: 14%;
+    box-sizing: border-box;
+}
+
+.messangers {
+    background-color: rgb(238, 238, 238);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.messanger-logs {
+    display: flex;
+    list-style: none;
+}
+
+.messanger-log {
+    width: 19px;
+    height: 18px;
+    padding-right: 29px;
+}
+
+.copyright {
+    width: 220px;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 0.84vw;
+    text-align: center;
+    color: rgb(153, 153, 153);
+    margin-left: auto;
+    margin-right: auto;
+}
