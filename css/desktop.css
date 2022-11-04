@@ -17,6 +17,127 @@
     padding: 0;
 }
 
+.popup {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+
+    background-color: rgb(0, 0, 0, 0.5);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.visibility {
+    display: none;
+}
+
+.popup__toggle {
+    display: none;
+}
+
+.popup__toggle:checked + .popup {
+    display: flex;
+}
+
+.popup-content {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 390px;
+    height: 589px;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 2;
+    font-family: "OpenSans Regular"
+}
+
+.popup__clouse {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    right: -1px;
+    top: -23px;
+
+    cursor: pointer;
+}
+
+.clouse-img {
+    width: 17px;
+    height: 17px;
+}
+
+.popup__clouse-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.question {
+    font-family: inherit;
+    font-size: 13px;
+    margin-top: 28px;
+    width: 100%;
+}
+
+.question-txt {
+    display: block;
+    padding-bottom: 11px;
+}
+
+select {
+    color: rgb(121, 122, 122);
+    position: relative;
+    -webkit-appearance: none;
+    background-image: url("../svg/form-arrows.svg");
+    background-repeat: no-repeat;
+    background-size: 7px 17px;
+    background-position: right 14px center;
+}
+
+.radio {
+    display: none;
+}
+
+.radio-txt {
+    margin-right: 13px;
+    font-size: 13px;
+}
+
+.radio-txt::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+
+    background-image: url("../svg/form-empty-circle.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 18px;
+    vertical-align: middle;
+}
+
+.radio:checked ~ .radio-txt::before {
+    background-image: url("../svg/form-circle.svg")
+}
+
+.search-textarea {
+    min-height: 130px;
+    resize: none;
+}
+
+.popup-button {
+    margin-top: 27px;
+}
+
 .ref {
     text-decoration: none;
     color:inherit
@@ -72,7 +193,7 @@
     display: flex;
     flex-wrap: nowrap;
     list-style-type: none;
-    font-size: 0.78vw;
+    font-size: 13px;
     font-family: "OpenSans Regular";
     font-weight: normal;
     text-transform: uppercase;
@@ -93,7 +214,8 @@
 }
 
 .logo {
-    width: 10%;
+    width: 179px;
+    height: 41px;
     z-index: 1;
     position: relative;
 }
@@ -101,12 +223,12 @@
 .intro {
     color: rgb(255, 255, 255);
     font-family: "OpenSans Bold";
-    font-size: 2.71vw;
+    font-size: 45px;
     text-align: center;
     text-transform: uppercase;
     padding-left: 246px;
     padding-right: 246px;
-    padding-bottom: 147px;
+    padding-bottom: 128px;
 }
 
 
@@ -130,7 +252,7 @@
 
 .head-txt {
     font-family: "Open Sans";
-    font-size: 1.2vw;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
     margin: 0;
@@ -198,7 +320,7 @@
     display: flex;
     font-family: "Open Sans";
     font-weight: bold;
-    font-size: 0.84vw;
+    font-size: 14px;
     text-transform: uppercase;
     margin-top: 0;
     padding-left: 10%;
@@ -212,7 +334,7 @@
 .text-inform {
     font-family: "Open Sans";
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 20px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     padding-left: 10%;
@@ -264,22 +386,23 @@
 .post-head {
     font-family: "Open Sans";
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 20px;
     text-transform: uppercase;
     position: relative;
-    height: 18%;
     margin-top: 15px;
+    padding-bottom: 36px;
 }
 
 .date-author {
     display: flex;
+    padding-bottom: 52px;
 }
 
 .date {
-    padding-right: 1.13%;
+    padding-right: 14px;
     font-family: "Open Sans";
     font-weight: normal;
-    font-size: 0.72vw;
+    font-size: 12px;
     color: rgb(136, 136, 136);
     white-space: nowrap;
 }
@@ -288,7 +411,7 @@
     margin: 0;
     font-family: "Open Sans";
     font-weight: bold;
-    font-size: 0.72vw;
+    font-size: 12px;
     color: rgb(0, 0, 0);
     white-space: nowrap;
 }
@@ -296,7 +419,7 @@
 .post-text {
     font-family: "Open Sans";
     font-weight: normal;
-    font-size: 0.9vw;
+    font-size: 15px;
     color: rgb(0, 0, 0);
     position: relative;
 }
@@ -315,7 +438,7 @@
 }
 
 .mini-head {
-    font-size: 0.84vw;
+    font-size: 14px;
 }
 
 .fresh-posts {
@@ -347,7 +470,7 @@
 .mini-trend {
     font-family: "Open Sans";
     font-weight: bold;
-    font-size: 0.84vw;
+    font-size: 14px;
     min-width: 100%;
     margin-top: 0.6%;
     text-transform: uppercase;
@@ -364,8 +487,7 @@
 
 .search {
     background-color: rgb(244, 247, 246);
-    width: 82%;
-    height: 48px;
+    width: 100%;
     border: 0;
     padding: 19px;
     box-sizing: border-box;
@@ -398,7 +520,7 @@
     border: none;
     font-family: "Open Sans";
     font-weight: bold;
-    font-size: 0.84vw;
+    font-size: 14px;
     color: rgb(255, 255, 255);
     background-color: rgb(181, 159, 91);
     cursor: pointer;
@@ -421,7 +543,7 @@
     padding: 7px;
     font-family: "Open Sans";
     font-weight: bold;
-    font-size: 0.84vw;
+    font-size: 14px;
 }
 
 .topics {
@@ -436,7 +558,7 @@
 .topic-tag {
     font-family: "Open Sans";
     font-weight: bold;
-    font-size: 0.84vw;
+    font-size: 14px;
     text-align: left;
     border-bottom: 1px solid rgb(238, 238, 238);
     margin-bottom: 15px;
@@ -447,7 +569,7 @@
 .topic-number {
     font-family: "Open Sans";
     font-weight: bold;
-    font-size: 0.72vw;
+    font-size: 12px;
     color: rgb(181, 159, 91);
     margin-left: 6px;
     vertical-align: super;
@@ -517,12 +639,12 @@
 .price {  
     font-family: "Open Sans";
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 20px;
     display: block;
 }
 
 .crossed-price {
-    font-size: 0.84vw;
+    font-size: 14px;
     text-decoration: line-through;
 }
 
@@ -562,7 +684,7 @@
     display: block;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
-    font-size: 0.84vw;
+    font-size: 14px;
     text-align: center;
     color: rgb(153, 153, 153);
     margin-left: auto;
