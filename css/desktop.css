@@ -576,52 +576,45 @@ select {
 }
 
 .buy-panel {
-    margin-top: 63px;
-    width: 100%;
-    padding-left: 14%;
-    padding-right: 14%;
+    margin-top: 60px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     box-sizing: border-box;
 }
 
 .products {
+    margin-top: 25px;
     display: flex;
-    margin-top: 29px;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 
-.product-image {
-    width: 86.706%;
-    height: 204px;
-    padding-left: 23px;
-    padding-right: 23px;
-}
-
 .product {
-    width: 28.949%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.product:nth-child(2) {
-    padding-left: 66px;
-    padding-right: 66px;
+.product-image {
+    width: 300px;
+    text-align: center;
 }
 
 .buy-content {
-    height: 261px;
-    width: 100%;
-    box-sizing: border-box;
     border: 3px solid rgb(181, 159, 91);
     position: relative;
-    bottom: 29px;
+    z-index: 1;
+    flex: 1 0 auto;
+    margin-top: -35px;
     padding: 55px 23px 26px 21px;
 }
 
 .buy-post-head {
-    margin-bottom: 0;
-}
-
-.buy-post-text {
+    line-height: 24px;
+    padding-bottom: 0;
     margin-top: 0;
 }
 
@@ -632,8 +625,10 @@ select {
 
 .price-button {
     display: flex;
+    margin-top: 24px;
     width: 100%;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .price {  
@@ -651,13 +646,14 @@ select {
 .button-buy {
     width: 40.76%;
     position: relative;
+
 }
 
 .foot {
-    width: 100%;
     padding-left: 14%;
     padding-right: 14%;
     box-sizing: border-box;
+    margin-top: 69px;
 }
 
 .messangers {
@@ -680,7 +676,6 @@ select {
 }
 
 .copyright {
-    width: 220px;
     display: block;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
@@ -689,4 +684,5 @@ select {
     color: rgb(153, 153, 153);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 43px;
 }
