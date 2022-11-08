@@ -8,7 +8,7 @@
     <title>NOEMI</title>
 </head>
 <body>
-    <section class="popup visibility">
+    <section class="popup _hidden">
         <label for="popup1" class="popup__clouse-background"></label>
         <div class="popup-content">
             
@@ -396,7 +396,9 @@
 
         <div class="products">
             <article class="product">
-                <img class="product-image" src="images/shop-item-desk1.jpg" alt="">
+                <div class="image-container">
+                    <img class="product-image" src="images/shop-item-desk1.jpg" alt="">
+                </div>
                 <div class="buy-content">
                     <h3 class="post-head buy-post-head">Подушки на диван</h3>
                     <p class="post-text buy-post-text">
@@ -415,7 +417,9 @@
                 </div>
             </article>
             <article class="product">
-                <img class="product-image" src="images/shop-item-desk2.jpg" alt="">
+                <div class="image-container">
+                    <img class="product-image" src="images/shop-item-desk2.jpg" alt="">
+                </div>
                 <div class="buy-content">
                     <h3 class="post-head buy-post-head">Кукла «Зайчик»</h3>
                     <p class="post-text buy-post-text">
@@ -434,7 +438,9 @@
                 </div>
             </article>
             <article class="product">
-                <img class="product-image" src="images/shop-item-desk3.jpg" alt="">
+                <div class="image-container">
+                    <img class="product-image" src="images/shop-item-desk3.jpg" alt="">
+                </div>
                 <div class="buy-content">
                     <h3 class="post-head buy-post-head">Шестиугольная рамка</h3>
                     <p class="post-text buy-post-text">
@@ -456,30 +462,32 @@
     </section>
 
     <footer class="foot">
-        <address class="messangers">
-            <ul class="messanger-logs">
-                <li>
-                    <a href="#" class="ref">
-                        <img class="messanger-log" src="svg/001-dribbble.svg">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="ref">
-                        <img class="messanger-log" src="svg/001-pinterest.svg">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="ref">
-                        <img class="messanger-log" src="svg/003-tumblr.svg">
-                    </a>
-                </li>
-            </ul>
-        </address>
+        <div class="wrapper">
+            <address class="messangers">
+                <ul class="messanger-logs">
+                    <li>
+                        <a href="#" class="ref">
+                            <img class="messanger-log" src="svg/001-dribbble.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="ref">
+                            <img class="messanger-log" src="svg/001-pinterest.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="ref">
+                            <img class="messanger-log" src="svg/003-tumblr.svg">
+                        </a>
+                    </li>
+                </ul>
+            </address>
 
-        <div class="copyright">
-            <a href="#" class="ref">
-                Copyright © 2009–2019 City Blog LLC.
-            </a>
+            <div class="copyright">
+                <a href="#" class="ref">
+                    Copyright © 2009–2019 City Blog LLC.
+                </a>
+            </div>
         </div>
     </footer>
 </body>

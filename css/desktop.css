@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "OpenSans Bold";
+    font-family: "OpenSans";
     src: url(../sources/fonts/OpenSans-Bold.woff);
     font-weight: 700;
     font-style: normal;
 }
   
   @font-face {
-    font-family: "OpenSans Regular";
+    font-family: "OpenSans";
     src: url(../sources/fonts/OpenSans-Regular.woff);
     font-weight: 400;
     font-style: normal;
@@ -15,9 +15,6 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
     font-family: "OpenSans", "Tahoma", sans-serif;
 }
 
@@ -38,7 +35,7 @@ body {
     
 }
 
-.visibility {
+._hidden {
     display: none;
 }
 
@@ -411,7 +408,6 @@ select {
 
 .author {
     margin: 0;
-    font-family: "Open Sans";
     font-weight: bold;
     font-size: 12px;
     color: rgb(0, 0, 0);
@@ -419,7 +415,6 @@ select {
 }
 
 .post-text {
-    font-family: "Open Sans";
     font-weight: normal;
     font-size: 15px;
     color: rgb(0, 0, 0);
@@ -525,14 +520,12 @@ select {
     list-style-type: none;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0;
 }
 
 .side-tag {
     border: 3px solid rgb(238, 238, 238);
     margin: 6px;
     padding: 7px;
-    font-family: "Open Sans";
     font-weight: bold;
     font-size: 14px;
 }
@@ -543,39 +536,32 @@ select {
 
 .topics-tags {
     list-style-type: none;
-    flex-direction: column;
 }
 
 .topic-tag {
-    font-family: "Open Sans";
     font-weight: bold;
     font-size: 14px;
-    text-align: left;
     border-bottom: 1px solid rgb(238, 238, 238);
     margin-bottom: 15px;
-    padding-bottom: 8px;
+    padding-bottom: 12px;
     display: flex;
 }
 
 .topic-number {
-    font-family: "Open Sans";
     font-weight: bold;
     font-size: 12px;
     color: rgb(181, 159, 91);
-    margin-left: 6px;
     vertical-align: super;
 }
 
 .buy-panel {
     margin-top: 60px;
-    width: 1200px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    box-sizing: border-box;
 }
 
 .products {
-    margin-top: 25px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -589,7 +575,7 @@ select {
     align-items: center;
 }
 
-.product-image {
+.image-container {
     width: 300px;
     text-align: center;
 }
@@ -604,9 +590,8 @@ select {
 }
 
 .buy-post-head {
-    line-height: 24px;
-    padding-bottom: 0;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .product-ref {
@@ -623,7 +608,6 @@ select {
 }
 
 .price {  
-    font-family: "Open Sans";
     font-weight: bold;
     font-size: 20px;
     display: block;
@@ -641,10 +625,8 @@ select {
 }
 
 .foot {
-    padding-left: 14%;
-    padding-right: 14%;
-    box-sizing: border-box;
     margin-top: 69px;
+    padding-bottom: 30px;
 }
 
 .messangers {
@@ -667,14 +649,10 @@ select {
 }
 
 .copyright {
-    display: block;
-    font-family: "Open Sans", sans-serif;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     color: rgb(153, 153, 153);
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 43px;
 }
 
