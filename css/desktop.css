@@ -169,13 +169,8 @@ select {
     bottom: 0;
 }
 
-.container {
-    width: 1170px;
-    padding-left: 21px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 2;
+.container-hat {
+    z-index: 1;
     position: relative;
 }
 
@@ -659,15 +654,107 @@ select {
 @media (max-width: 640px) {
     .hat {
         background-image: url("../images/banner-mobile.jpg");
-        height: 638px;
+        padding-bottom: 220px;
     }
 
-    .container {
-
+    .hamburger-menu {
+        position: relative;
     }
 
+    #menu__toggle {
+        display: none;
+    }
+      
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        right: 0;
+    }
+    
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        
+        width: 26px;
+        height: 26px;
+        
+        cursor: pointer;
+        z-index: 1; 
+    }
+    
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        
+        width: 100%;
+        height: 2px;
+        
+        background-color: rgb(255, 255, 255);
+        
+        transition-duration: .25s;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: 0;
+    
+        width: 300px;
+        height: 100%;
+    
+        margin: 0;
+        padding: 80px 0;
+    
+        list-style: none;
+    
+        background-color: rgb(181, 159, 91);
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    
+        transition-duration: .25s;
+    }
+    
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+    
+        color: #333;
+    
+        font-weight: 600;
+    
+        text-decoration: none;
+    
+        transition-duration: .25s;
+    }
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
     .container-top {
-
+        display: none;
     }
 
     .logo {
@@ -696,5 +783,36 @@ select {
 
     .intro {
         font-size: 26px;
+    }
+
+    .trends-list {
+        display: block;
+    }
+
+    .page-container {
+        display: block;
+    }
+
+    .posts {
+        box-sizing: border-box;
+        width: auto;
+    }
+
+    .post {
+        display: block;
+    }
+
+    .products {
+        display: block;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    
+}
+
+@media (min-width: 1200px) {
+    .hamburger-menu {
+        display: none;
     }
 }
