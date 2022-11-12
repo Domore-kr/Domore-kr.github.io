@@ -20,18 +20,16 @@
 
 .popup {
     position: fixed;
-    width: 100%;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 3;
 
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.6);
     
     display: flex;
     justify-content: center;
-    align-items: center;
     
 }
 
@@ -50,12 +48,11 @@
 .popup-content {
     position: relative;
     background-color: rgb(255, 255, 255);
-    width: 390px;
-    height: 589px;
     box-sizing: border-box;
     padding: 20px;
     z-index: 2;
-    font-family: "OpenSans Regular"
+    font-family: "OpenSans Regular";
+    margin: auto;
 }
 
 .popup__clouse {
@@ -184,6 +181,47 @@ select {
     margin-bottom: 129px;
 }
 
+.menu-burger {
+    width: 1em;
+    height: 1em;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    font-size: 25px;
+    position: absolute;
+    right: 15px;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+.menu-burger-label {
+    width: 100%;
+    height: 20%;
+    margin-top: -0.1em;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.menu-burger:before {
+    top: 0;
+}
+
+.menu-burger:before,
+.menu-burger:after {
+    content: "";
+    width: 100%;
+    height: 20%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+}
+
+.menu-burger:after {
+    bottom: 0;
+}
+
 .menu-list {
     display: flex;
     flex-wrap: nowrap;
@@ -309,7 +347,6 @@ select {
     color: rgb(181, 159, 91);
     list-style-type: none;
     display: flex;
-    font-family: "Open Sans";
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
@@ -395,15 +432,12 @@ select {
 
 .date {
     padding-right: 14px;
-    font-family: "Open Sans";
-    font-weight: normal;
     font-size: 12px;
     color: rgb(136, 136, 136);
     white-space: nowrap;
 }
 
 .author {
-    margin: 0;
     font-weight: bold;
     font-size: 12px;
     color: rgb(0, 0, 0);
@@ -411,7 +445,6 @@ select {
 }
 
 .post-text {
-    font-weight: normal;
     font-size: 15px;
     color: rgb(0, 0, 0);
     line-height: 22px;
@@ -656,7 +689,7 @@ select {
 @media (max-width: 640px) {
     .popup {
         padding: 40px 15px;
-        overflow-y: scroll;
+        overflow: scroll;
     }
     
     .hat {
@@ -676,47 +709,6 @@ select {
         display: none;
     }
 
-    .menu-burger {
-        width: 1em;
-        height: 1em;
-        border: none;
-        padding: 0;
-        background-color: transparent;
-        font-size: 25px;
-        position: absolute;
-        right: 15px;
-        text-indent: -9999px;
-        cursor: pointer;
-    }
-
-    .menu-burger-label {
-        width: 100%;
-        height: 20%;
-        margin-top: -0.1em;
-        background-color: #ffffff;
-        position: absolute;
-        left: 0;
-        top: 50%;
-    }
-
-    .menu-burger:before {
-        top: 0;
-    }
-
-    .menu-burger:before,
-    .menu-burger:after {
-        content: "";
-        width: 100%;
-        height: 20%;
-        background-color: #ffffff;
-        position: absolute;
-        left: 0;
-    }
-
-    .menu-burger:after {
-        bottom: 0;
-    }
-
     .mobile-logo {
         width: 74.7%;
         margin-left: auto;
@@ -734,6 +726,7 @@ select {
 
     .head {
         margin-bottom: 0;
+        font-size: 16px;
     }
 
 
@@ -849,7 +842,115 @@ select {
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
-    
+    .mobile-logo {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hat {
+        background-image: url("../images/banner-bg-tablet.jpg");
+    }
+
+    .wrapper {
+        padding: 0 35px;
+    }
+
+    .menu-burger {
+        right: 34px;
+    }
+
+    .intro {
+        width: 80%;
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .center {
+        margin-top: 50px;
+    }
+
+    .trends {
+        margin-bottom: 49px;
+    }
+
+    .trends-list {
+        flex-wrap: wrap;
+    }
+
+    .trend {
+        width: calc((100% - 4px) / 2);
+    }
+
+    .trend:nth-child(n+3) {
+        margin-top: 4px;
+    }
+
+    .post {
+        display: block;
+        border-bottom: 3px solid #eeeeee;
+    }
+
+    .image-post {
+        width: 100%;
+    }
+
+    .post-inform {
+        margin-left: 0;
+        margin-top: 14px;
+    }
+
+    .post-header {
+        margin-bottom: 33px;
+    }
+
+    .post-head {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .post-text {
+        margin-bottom: 19px;
+    }
+
+    .sidebar {
+        width: auto;
+    }
+
+    .search {
+        font-size: 13px;
+    }
+
+    .side-tag {
+        font-size: 12px;
+    }
+
+    .buy-panel {
+        margin-top: 49px;
+        padding: 0 35px;
+    }
+
+    .product {
+        width: 48%;
+    }
+
+    .product:nth-child(n+3) {
+        margin-top: 4%;
+    }
+
+    .foot {
+        margin-top: 50px;
+    }
+
+    .messangers {
+        margin-bottom: 50px;
+    }
+
+    .copyright {
+        margin-bottom: 37px;
+    }
 }
 
 @media (min-width: 1200px) {
