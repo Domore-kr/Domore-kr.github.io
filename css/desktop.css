@@ -297,7 +297,7 @@ select {
     margin-left: auto;
     margin-top: 5px;
     opacity: 0.4;
-    background-color: rgb(255, 217, 189);
+    background-color: #b59f5b;
 }
 
 .trends-list {
@@ -353,10 +353,15 @@ select {
     margin-top: 0;
     padding-left: 10%;
     margin-block-end: 0;
+    flex-wrap: wrap;
 }
 
 .tag-link {
     margin-right: 20px;
+}
+
+.tag-link:hover {
+    text-decoration: underline;
 }
 
 .text-inform {
@@ -399,6 +404,11 @@ select {
 
 .post:nth-child(1n + 2) {
     margin-top: 58px
+}
+
+.post-image {
+    min-width: 380px;
+    min-height: 300px;
 }
 
 .image-post {
@@ -474,6 +484,11 @@ select {
     margin-top: 20px;
 }
 
+.mini-image-container {
+    min-width: 69px;
+    min-height: 70px;
+}
+
 .image-mini {
     width: 70px;
 }
@@ -503,10 +518,10 @@ select {
 .search {
     background-color: rgb(244, 247, 246);
     width: 100%;
+    height: 48px;
     border: 0;
     padding: 19px;
     box-sizing: border-box;
-    outline: none;
 }
 
 .search-button {
@@ -554,10 +569,18 @@ select {
 
 .side-tag {
     border: 3px solid rgb(238, 238, 238);
-    margin: 6px;
-    padding: 7px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+}
+
+.ref-tag {
+    display: block;
+    padding: 4px 12px;
+    font-size: 12px;
     font-weight: bold;
-    font-size: 14px;
+    color: #0f0d0e;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .topics {
@@ -575,7 +598,6 @@ select {
     border-bottom: 1px solid rgb(238, 238, 238);
     margin-bottom: 15px;
     padding-bottom: 12px;
-    display: flex;
 }
 
 .topic-number {
@@ -607,7 +629,8 @@ select {
 }
 
 .image-container {
-    width: 300px;
+    min-width: 300px;
+    min-height: 204px;
     text-align: center;
 }
 
