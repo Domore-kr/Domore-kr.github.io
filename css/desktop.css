@@ -130,6 +130,18 @@ select {
 .search-textarea {
   min-height: 130px;
   resize: none;
+
+  background-color: rgb(244, 247, 246);
+  width: 100%;
+  border: 0;
+  padding: 19px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.search-textarea:focus {
+  border-bottom: 1px solid #ebe7d7;
 }
 
 .popup-button {
@@ -519,7 +531,7 @@ select {
 }
 
 .search:focus {
-  border: 1px solid rgb(181, 159, 91);
+  border: 1px solid #b59f5b;
 }
 
 .search-button {
@@ -542,6 +554,11 @@ select {
   width: 100%;
   margin-top: 23px;
   margin-bottom: 18px;
+}
+
+.email:focus {
+  border: none;
+  border-bottom: 1px solid #ebe7d7;
 }
 
 .button {
