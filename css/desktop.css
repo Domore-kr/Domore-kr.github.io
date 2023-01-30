@@ -915,7 +915,7 @@ select {
   }
 
   .trend {
-    width: calc((100% - 4px) / 2);
+    /* width: calc((100% - 4px) / 2); */
   }
 
   .trend:nth-child(n + 3) {
@@ -994,5 +994,37 @@ select {
 
   .menu-burger {
     display: none;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
+  .trends-list {
+    flex-wrap: wrap;
+  }
+
+  .trend {
+    width: calc((100% - 4px) / 2);
+  }
+
+  .trend:nth-child(even) {
+    margin-left: 4px;
+  }
+
+  .trend:nth-child(n + 3) {
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 641px) and (orientation: portrait) {
+  .trend {
+    width: 100%;
+  }
+
+  .trend:nth-child(even) {
+    margin-left: 0;
+  }
+
+  .trend:nth-child(n + 2) {
+    margin-top: 4px;
   }
 }
